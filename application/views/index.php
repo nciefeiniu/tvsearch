@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>犇云</title>
 
-    <link href="../css/main.css" rel="stylesheet">
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 
 
 </head>
