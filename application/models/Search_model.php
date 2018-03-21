@@ -3,7 +3,8 @@ class Search_model extends CI_Model{
 
     public function __construct()
     {
-        $this->load->database();
+        require_once '../php/lib/XS.php';
+        $xs = new XS('tvspider');
     }
 
     public function get_tvid($slug = FALSE)

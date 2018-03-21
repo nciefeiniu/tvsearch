@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>犇云</title>
 
-    <link href="<?php echo base_url();?>static/css/main.css" rel="stylesheet">
-    <link href="<?php echo base_url()?>static/css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="<?php echo base_url()?>static/js/bootstrap.min.js"></script>
+    <link href="static/css/main.css" rel="stylesheet">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="<?php echo base_url();?>static/js/bootstrap.min.js"></script>
 
 
 </head>
@@ -16,7 +16,7 @@
         <div class="logo">
             <div class="logo_">
                 <center>
-                <img id="logo_img" src="<?php echo base_url()?>static/images/logos.png"  >
+                <img id="logo_img" src="static/images/logos.png"  >
                 </center>
             </div>
         </div>
