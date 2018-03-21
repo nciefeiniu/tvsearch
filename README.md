@@ -15,8 +15,24 @@ Xunsearch 旨在帮助一般开发者针对既有的海量数据，快速而方�
 
 在ubuntu14.04下安装：
 
+```shell
+ 
+ sudo apt install make
 
+ sudo apt install gcc 
+ 
+ sudo apt install g++ 
+ 
+ sudo apt install zlib1g-dev
 
+ sudo wget http://www.xunsearch.com/download/xunsearch-full-latest.tar.bz2
+
+ tar -xjf xunsearch-full-latest.tar.bz2
+
+ tar -xjf xunsearch-full-latest.tar.bz2
+
+ sh setup.sh
+```
 
 ## PHP SDK
 php SDK已经放在了 application/php 下。使用教程参考的 [xunsearch官方文档](http://www.xunsearch.com/doc/php)
