@@ -1,5 +1,9 @@
 <?php
-echo "ok";
-echo $ids;
+
+
+foreach ($ids as $i){
+    echo '"'.$i->id.'+'.$i->name.'"';
+}
+
 
 ?>
