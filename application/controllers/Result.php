@@ -7,8 +7,18 @@ class Result extends CI_Controller {
     }
 
     public function view($slug = NULL) {
-        $data['ids'] = $this->search_model->get_tvid($slug);
-        $this->load->view('searchresult', $data);
+        // 验证表单是否被提交和是否通过验证规则
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules('text', 'Text', 'required');
+
+        if ($this->form_validation->run() === FALSE){
+            // 错误跳回首页
+            $this->load->view('index');
+        }else{
+            $data['ids'] = $this->search_model->get_tvid();
+            $this->load->view('searchresult', $data);
+        }
     }
 }
 

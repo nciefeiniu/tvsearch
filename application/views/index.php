@@ -10,7 +10,7 @@
 
 
 </head>
-<body background="https://cn.bing.com/az/hprichbg/rb/TulipsEquinox_ZH-CN11213785857_1920x1080.jpg">
+<body background="https://az29176.vo.msecnd.net/videocontent/WaterDay_1080_HD_ZH-CN46683123.jpg">
 <div id="viewport">
     <div class="content" id="main">
         <div class="logo">
@@ -22,8 +22,10 @@
         </div>
         <!--搜索框-->
         <div class="search">
-            <form action="http://baidu.com" method="get">
-                <input type="text" class="form-control" placeholder="请输入剧名~  按回车键确认">
+            <?php echo validation_errors(); ?>
+            <?php echo form_open('result/view'); ?>
+            <!-- <form action="http://baidu.com" method="get"> -->
+                <input type="text" name="text" class="form-control" placeholder="请输入剧名~  按回车键确认">
             </form>
         </div>
         <!--&lt;!&ndash;提示框&ndash;&gt;-->
