@@ -1,5 +1,5 @@
 <?php
-print_r ($result_item['data']);
-
+echo "ok";
+echo $ids;
 
 ?>

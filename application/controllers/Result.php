@@ -13,11 +13,12 @@ class Result extends CI_Controller {
         $this->form_validation->set_rules('text', 'Text', 'required');
 
         if ($this->form_validation->run() === FALSE){
-            // 错误跳回首页
-            $this->load->view('index');
+            // 没输入值跳回首页
+            $this->load->helper('url');
+            redirect();
         }else{
             $data['ids'] = $this->search_model->get_tvid();
-            $this->load->view('searchresult', $data);
+            $this->load->view('Searchresult', $data);
         }
     }
 }

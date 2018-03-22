@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>犇云</title>
 
-    <link href="static/css/main.css" rel="stylesheet">
-    <link href="static/css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+    <link href="/static/css/main.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
 
 
 </head>
@@ -16,15 +16,16 @@
         <div class="logo">
             <div class="logo_">
                 <center>
-                <img id="logo_img" src="static/images/logos.png"  >
+                <img id="logo_img" src="/static/images/logos.png"  >
                 </center>
             </div>
         </div>
         <!--搜索框-->
         <div class="search">
+            <?php $this->load->library('form_validation');?>
             <?php echo validation_errors(); ?>
+            <!-- 生成表单 -->
             <?php echo form_open('result/view'); ?>
-            <!-- <form action="http://baidu.com" method="get"> -->
                 <input type="text" name="text" class="form-control" placeholder="请输入剧名~  按回车键确认">
             </form>
         </div>
