@@ -6,7 +6,7 @@
 
     <link href="static/css/main.css" rel="stylesheet">
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="<?php echo base_url();?>static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
 
 
 </head>
