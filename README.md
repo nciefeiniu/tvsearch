@@ -2,6 +2,9 @@
 
 -----------
 
+demo 地址 [http://bens.cow66.cn](http://bens.cow66.cn)
+
+-----------
 
 ## 中文检索
 
