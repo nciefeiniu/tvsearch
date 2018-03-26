@@ -9,6 +9,8 @@ demo 地址 [http://bens.cow66.cn](http://bens.cow66.cn)
 
  地址：[https://github.com/nciefeiniu/python-test/tree/master/daliulian/daliulian](https://github.com/nciefeiniu/python-test/tree/master/daliulian/daliulian)
 
+## PHP采用CI框架
+
 ## 中文检索
 
 采用 [xunsearch](http://www.xunsearch.com/)来进行中文检索功能。
@@ -17,7 +19,6 @@ Xunsearch 是一个高性能、全功能的全文检索解决方案。
 
 Xunsearch 旨在帮助一般开发者针对既有的海量数据，快速而方便地建立自己的全文搜索引擎
 
-## PHP采用CI框架
 
 ## xunsearch安装
 
