@@ -10,7 +10,7 @@
 
 
 </head>
-<body background="https://az29176.vo.msecnd.net/videocontent/WaterDay_1080_HD_ZH-CN46683123.jpg">
+<body>
 <div id="viewport">
     <div class="content" id="main">
         <div class="logo">
