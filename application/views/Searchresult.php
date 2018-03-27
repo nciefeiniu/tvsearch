@@ -36,9 +36,15 @@
 <div id="main">
     <div class="result">
         <div class="box_2">
+            <?php
+                foreach($ids as $id):
+            ?>
             <div class="panel panel-primary">
                  <div class="panel-body">
-                      电影/电视剧名字
+                      <?php
+                        echo $id['id'];
+                        echo $id['name'];
+                      ?>
                  </div>
             <div class="panel-footer">
                 <span class="label label-success">magnet</span>
@@ -46,10 +52,14 @@
                 <span class="label label-info">thunder</span>
             </div>
             </div>
+            <?php
+                endforeach;
+            ?>
+            <!--这里结束-->
         </div>
     </div>
 </div>
-
+<!--页脚-->
 <div id="footer" class="container">
 <nav class="navbar navbar-default navbar-fixed-bottom">
     <div class="navbar-inner navbar-content-center">
