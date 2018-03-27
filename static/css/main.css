@@ -3,11 +3,6 @@ a:hover, a:visited, a:link, a:active {
     color: inherit;
 }
 
-body{
-     background-image: url(https://az29176.vo.msecnd.net/videocontent/WaterDay_1080_HD_ZH-CN46683123.jpg);
-     /* background-size: 100% 100%; */
-    }
-
 div#viewport{
     position: absolute;
     top: 0;
