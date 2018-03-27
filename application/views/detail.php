@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Bens</title>
     <!--<style type="text/css" href="./css/result.css"></style>-->
+    <link href="/static/css/detail.css" rel="stylesheet">
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/css/result.css" rel="stylesheet">
     <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
@@ -16,7 +17,7 @@
             <!--logo-->
             <div class="row">
                 <div class="col-xs-6 col-md-3">
-                    <a href="http://bens.cow66.cn"><img class="logo_img" src="/static/images/logos.png"></a>
+                    <img class="logo_img" src="logos.png">
                 </div>
             </div>
             <!--输入框-->
@@ -35,21 +36,19 @@
 <!--结果展示-->
 <div id="main">
     <div class="result">
-        <div class="box_2">
-            <div class="panel panel-primary">
-                 <div class="panel-body">
-                      电影/电视剧名字
-                 </div>
-            <div class="panel-footer">
-                <span class="label label-success">magnet</span>
-                <span class="label label-warning">ed2k</span>
-                <span class="label label-info">thunder</span>
+        <div class="detail">
+            <h2>小戏骨：八仙过海    完结</h2>
+            <div class="xian">
+                <i>小戏骨：八仙过海    完结</i>
+                <i>的下载链接</i>
             </div>
-            </div>
+            <!--链接部分 循环输出-->
+            <p>东京爱情故事(蓝光版).1991.11集全.国日台三语.简繁中字.BluRay.720p.x264.FLAC.3Audios-CMCT.mkv</p>
+            <p>S02E10.Chi_Eng.HR-HDTV.AC3.1024X576.x264-YYeTs人人影视.mkv</p>
         </div>
     </div>
 </div>
-
+<!--footer-->
 <div id="footer" class="container">
 <nav class="navbar navbar-default navbar-fixed-bottom">
     <div class="navbar-inner navbar-content-center">
