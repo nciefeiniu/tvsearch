@@ -1,0 +1,6 @@
+/*分页*/
+.listPage{float:left;font-size:12px;background:#BC2222;color:white;border:1px solid #CA6A6B;padding:0px 10px;margin-right:3px;font-family:Arial;}
+    .listPage:hover{background:#BC5555;}
+.listPage2{float:left;font-size:12px;background:#7F7F7F;color:white;border:1px solid #EBEDEC;padding:0px 10px;margin-right:3px;}
+    .listPage2:hover{background:#333;}
+.listPage3{float:left;font-size:12px;background:#333;color:white;border:1px solid #EBEDEC;padding:0px 10px;margin-right:3px;}

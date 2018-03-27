@@ -11,7 +11,7 @@ class Search_model extends CI_Model{
         }
     }
 
-    public function get_tvid()
+    public function get_tvid($limit = 0)
     {
         $xs = new XS('tvspider');
         $search = $xs->search;
@@ -21,10 +21,20 @@ class Search_model extends CI_Model{
         $query = $this->input->post('text');
         // 检索数据
         $search->setQuery($query);
-        $result = $search->search();
+        $result = $search->setLimit(7, $limit)->search();
         return $result;
-        
-    
+    }
+
+    public function get_count(){
+        $xs = new XS('tvspider');
+        $search = $xs->search;
+        $this->load->helper('url');
+        $query = $this->input->post('text');
+        // 检索数据
+        $search->setQuery($query);
+        $count = $search->count();
+        return $count;
+
     }
 }
 ?>

@@ -6,6 +6,7 @@
     <!--<style type="text/css" href="./css/result.css"></style>-->
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/css/result.css" rel="stylesheet">
+    <link href="/static/css/fenye.css" rel="stylesheet">
     <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -37,6 +38,9 @@
     <div class="result">
         <div class="box_2">
             <?php
+                //判断
+                if (is_array($ids) && !empty($ids)){
+                //循环输出
                 foreach($ids as $id):
             ?>
             <div class="panel panel-primary">
@@ -54,8 +58,29 @@
             </div>
             <?php
                 endforeach;
+            }else{
+                //下面是没匹配到数据返回的信息！
+            ?>
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    There is nothing!!! 
+                </div>
+            </div>
+            <?php
+                }
             ?>
             <!--这里结束-->
+
+            <!-- 翻页 -->
+            <div id="pagelist">
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <?php
+                        echo $pages;
+                    ?>
+                </ul>
+            </nav>
+            </div>
         </div>
     </div>
 </div>
