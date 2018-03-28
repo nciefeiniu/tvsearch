@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Bens</title>
-    <!--<style type="text/css" href="./css/result.css"></style>-->
-    <link href="/static/css/detail.css" rel="stylesheet">
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/css/result.css" rel="stylesheet">
+    <link href="/static/css/detail.css" rel="stylesheet">
     <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -17,7 +16,7 @@
             <!--logo-->
             <div class="row">
                 <div class="col-xs-6 col-md-3">
-                    <img class="logo_img" src="logos.png">
+                    <img class="logo_img" src="/static/images/logos.png">
                 </div>
             </div>
             <!--输入框-->
@@ -37,17 +36,26 @@
 <div id="main">
     <div class="result">
         <div class="detail">
-            <h2>小戏骨：八仙过海    完结</h2>
+            <h2><?php echo $name;?></h2>
             <div class="xian">
-                <i>小戏骨：八仙过海    完结</i>
+                <i><?php echo $name;?></i>
                 <i>的下载链接</i>
             </div>
             <!--链接部分 循环输出-->
-            <p>东京爱情故事(蓝光版).1991.11集全.国日台三语.简繁中字.BluRay.720p.x264.FLAC.3Audios-CMCT.mkv</p>
-            <p>S02E10.Chi_Eng.HR-HDTV.AC3.1024X576.x264-YYeTs人人影视.mkv</p>
+            <?php
+                foreach ($urls as $url){
+            ?>
+            <p><a href="<?php echo $url['url'];?>"><?php echo $url['url_name'];?></a></p>
+            <?php }?>
         </div>
     </div>
 </div>
+
+<!--占位-->
+<div class = "blank">
+<div class="alert alert-danger" role="alert">我是有底线的~</div>
+</div>
+
 <!--footer-->
 <div id="footer" class="container">
 <nav class="navbar navbar-default navbar-fixed-bottom">

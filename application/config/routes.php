@@ -56,3 +56,5 @@ $route['translate_uri_dashes'] = FALSE;
 $route['result/view'] = 'result/view';
 $route['result/(:any)'] = 'result/view/$1';
 $route['result'] = 'result';
+$route['detail'] = 'detail';
+$route['detail/(:any)'] = 'detail/get_urls/$1';

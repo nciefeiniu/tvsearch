@@ -30,7 +30,7 @@
     </div>
 </div>
 <div class="clear_float">
-<hr />
+
 </div>
 
 <!--结果展示-->
@@ -44,12 +44,13 @@
                 foreach($ids as $id):
             ?>
             <div class="panel panel-primary">
+                 <a href="<?php echo '/index.php/detail/get_urls/' .  base64_encode($id['id']) . '/' .  preg_replace('/^[\pZ\pC]+|[\pZ\pC]+$/u','',$id['name'])?>">
                  <div class="panel-body">
                       <?php
-                        echo $id['id'];
                         echo $id['name'];
                       ?>
                  </div>
+                 </a>
             <div class="panel-footer">
                 <span class="label label-success">magnet</span>
                 <span class="label label-warning">ed2k</span>
