@@ -11,11 +11,8 @@ class Result extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
         $this->form_validation->set_rules('text', 'Text', 'required');
-
-        
         // 分页
         $this->load->library('pagination');
-
         $config['base_url'] = base_url().'/index.php/result/view/';
         $config['total_rows'] = $this->search_model->get_count();
         $config['per_page'] = 7;

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Bens</title>
+    <link rel="shortcut icon" href="/static/images/favico.ico">
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/css/result.css" rel="stylesheet">
     <link href="/static/css/detail.css" rel="stylesheet">
@@ -16,13 +17,16 @@
             <!--logo-->
             <div class="row">
                 <div class="col-xs-6 col-md-3">
-                    <img class="logo_img" src="/static/images/logos.png">
+                <a href="http://bens.cow66.cn"><img class="logo_img" src="/static/images/logos.png"></a>
                 </div>
             </div>
             <!--输入框-->
             <div class="s_input">
-                <form>
-                    <input type="text" class="form-control" placeholder="请输入剧名~  按回车键确认">
+            <?php $this->load->library('form_validation');?>
+            <?php echo validation_errors(); ?>
+            <!-- 生成表单 -->
+            <?php echo form_open('result/view'); ?>
+                    <input type="text" name="text" class="form-control" placeholder="请输入剧名~  按回车键确认">
                 </form>
             </div>
         </div>

@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>犇云</title>
-
-    <link href="/static/css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/static/images/favico.ico">
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
-
+    <link href="/static/css/main.css" rel="stylesheet">
 
 </head>
 <body>
@@ -36,8 +35,17 @@
     </div>
 
     <!--copyright-->
-<div id="footer">
-    <em>&copy; 2018 <a href="https://github.com/nciefeiniu"> nicefeiniu</a></em>
+<div id="footer" class="container">
+<nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="navbar-inner navbar-content-center">
+        <span class="text-muted credit ziti_1" >
+            蜀ICP备16035040号-2
+        </span>
+        <span class="text-muted credit ziti_2" >
+            &copy nicefeiniu 2018
+        </span>
+    </div>
+</nav>
 </div>
 </div>
 </body>

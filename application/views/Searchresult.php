@@ -22,8 +22,11 @@
             </div>
             <!--输入框-->
             <div class="s_input">
-                <form>
-                    <input type="text" class="form-control" placeholder="请输入剧名~  按回车键确认">
+            <?php $this->load->library('form_validation');?>
+            <?php echo validation_errors(); ?>
+            <!-- 生成表单 -->
+            <?php echo form_open('result/view'); ?>
+                    <input type="text" name="text" class="form-control" placeholder="请输入剧名~  按回车键确认">
                 </form>
             </div>
         </div>
@@ -44,7 +47,7 @@
                 foreach($ids as $id):
             ?>
             <div class="panel panel-primary">
-                 <a href="<?php echo '/index.php/detail/get_urls/' .  base64_encode($id['id']) . '/' .  preg_replace('/^[\pZ\pC]+|[\pZ\pC]+$/u','',$id['name'])?>">
+                 <a href="<?php echo '/index.php/detail/get_urls/' .  base64_encode($id['id']) . '/' .  preg_replace($id['name'])?>">
                  <div class="panel-body">
                       <?php
                         echo $id['name'];
